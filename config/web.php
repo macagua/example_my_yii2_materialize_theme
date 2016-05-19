@@ -46,6 +46,16 @@ $config = [
             ],
         ],
         */
+        // View and templates component settings
+        'view' => [
+            'class' => 'yii\web\View',
+            'theme' => [
+                'class' => 'yii\base\Theme',
+                'basePath' => '@app/themes/my-materialize',
+                'baseUrl' => '@web/my-materialize',
+                'pathMap' => ['@app/views' => '@app/themes/my-materialize'],
+            ],
+        ],
     ],
     'params' => $params,
 ];
